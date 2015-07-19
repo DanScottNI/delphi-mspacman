@@ -1,0 +1,116 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{67484d54-fad6-4152-aa23-3b915b844fea}</ProjectGuid>
+    <MainSource>LevelEditor.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>LevelEditor.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_SYMBOL_DEPRECATED>False</DCC_SYMBOL_DEPRECATED>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_GenerateStackFrames>True</DCC_GenerateStackFrames>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_ResourcePath>
+    <DCC_ObjPath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_ObjPath>
+    <DCC_IncludePath>$(DELPHI)\Lib\Debug;C:\PROGRA~1\Borland\Delphi7\Lib\COMPON~1\jvcl3\jcl\lib\D7\debug</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_SYMBOL_DEPRECATED>False</DCC_SYMBOL_DEPRECATED>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="RunParams">"C:\Documents and Settings\Dan\My Documents\Borland Studio Projects\MsPacman\Ms. Pac-Man (U) (Namco).nes"</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Dan</VersionInfoKeys><VersionInfoKeys Name="FileDescription">A level editor for the NES game, Ms Pacman</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName">Blinky</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments">A level editor for the NES game, Ms Pacman</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">LevelEditor.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="LevelEditor.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="cConfiguration.pas" />
+    <DCCReference Include="cFreeSpace.pas" />
+    <DCCReference Include="cLevel.pas" />
+    <DCCReference Include="cMirrorConfiguration.pas" />
+    <DCCReference Include="cROMdata.pas" />
+    <DCCReference Include="fAbout.pas">
+      <Form>frmAbout</Form>
+    </DCCReference>
+    <DCCReference Include="fBackupManagement.pas">
+      <Form>frmBackupManagement</Form>
+    </DCCReference>
+    <DCCReference Include="fDebugROMViewer.pas">
+      <Form>frmDebugROMViewer</Form>
+    </DCCReference>
+    <DCCReference Include="fDistribution.pas">
+      <Form>frmDistribution</Form>
+    </DCCReference>
+    <DCCReference Include="fEditorMain.pas">
+      <Form>frmEditorMain</Form>
+    </DCCReference>
+    <DCCReference Include="fExportLevels.pas">
+      <Form>frmExportLevels</Form>
+    </DCCReference>
+    <DCCReference Include="fFileProperties.pas">
+      <Form>frmFileProperties</Form>
+    </DCCReference>
+    <DCCReference Include="fGoToLevel.pas">
+      <Form>frmGoToLevel</Form>
+    </DCCReference>
+    <DCCReference Include="fImportLevels.pas">
+      <Form>frmImportLevels</Form>
+    </DCCReference>
+    <DCCReference Include="fKeyboardLayouts.pas">
+      <Form>frmKeyboardLayout</Form>
+    </DCCReference>
+    <DCCReference Include="fLevelInfo.pas">
+      <Form>frmLevelInfo</Form>
+    </DCCReference>
+    <DCCReference Include="fMirrorEditor.pas">
+      <Form>frmMirrorEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fOpenDialog.pas">
+      <Form>frmOpenDialog</Form>
+    </DCCReference>
+    <DCCReference Include="fPalette.pas">
+      <Form>frmPaletteEditor</Form>
+    </DCCReference>
+    <DCCReference Include="fPreferences.pas">
+      <Form>frmPreferences</Form>
+    </DCCReference>
+    <DCCReference Include="fStartingLives.pas">
+      <Form>frmStartingLives</Form>
+    </DCCReference>
+    <DCCReference Include="fStartingStage.pas">
+      <Form>frmStartingStage</Form>
+    </DCCReference>
+    <DCCReference Include="fTileEditor.pas">
+      <Form>frm16x16TileEditor</Form>
+    </DCCReference>
+    <DCCReference Include="uGlobal.pas" />
+    <DCCReference Include="uLunarcompress.pas" />
+    <DCCReference Include="uResourcestrings.pas" />
+    <DCCReference Include="uROM.pas" />
+    <None Include="Resources\Ms. Pac-Man (U) (Namco).ini" />
+  </ItemGroup>
+</Project>
